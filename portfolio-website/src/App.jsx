@@ -7,8 +7,8 @@ function App() {
   return (
     <div className='app flex flex-col items-center'>
       <Navbar/>
-      {/* <Header/>
-      <About/>
+      <Header/>
+      {/* <About/>
       <Work/>
       <Skills/>
       <Testimonial/>

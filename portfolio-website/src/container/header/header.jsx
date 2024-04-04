@@ -1,9 +1,79 @@
-import React from 'react'
+import React from "react";
+import { motion } from "framer-motion";
+import { images } from "../../constants";
+import "./header.scss";
 
 const Header = () => {
+  const scaleVariants = {
+    whileInView: {
+      scale: [0, 1],
+      opacity: [0, 1],
+      transition: {
+        duration: 1,
+        ease: "easeInOut",
+      },
+    },
+  };
   return (
-    <div>Header</div>
-  )
-}
+    <div id="home" className="app__header app__flex">
+      <motion.div
+        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.8 }}
+        className="app__header-info"
+      >
+        <div className="app__header-badge">
+          <div className="badge-cmp app__flex">
+            <span>👋</span>
+            <div style={{ marginLeft: 20 }}>
+              <p className="p-text">Hello, I am</p>
+              <h1 className="head-text">Martin!</h1>
+            </div>
+          </div>
+          <div className="tag-cmp app__flex">
+            <p className="p-text">
+              I'm a 21-year-old frontend <strong>React developer </strong>
+              based in Denmark.
+            </p>
+            <p className="p-text">
+              And, much like a green banana, I'm eagerly waiting to ripen into a
+              sweet, juicy, and fully-grown developer.
+            </p>
+          </div>
+        </div>
+      </motion.div>
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.8, delayChildren: 0.5 }}
+        className="app__header-img"
+      >
+        <img src={images.Martin2} alt="profile-bg" />
+        <motion.img
+          whileInView={{ scale: [0, 1] }}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
+          className="overlay_circle"
+          src={images.circle}
+          alt="profile-circle"
+        />
+      </motion.div>
+      <motion.div
+        variants={scaleVariants}
+        whileInView={scaleVariants.whileInView}
+        className="app__header-circles"
+      >
+        {[
+          images.tailwind,
+          images.react,
+          images.sass,
+          images.html,
+          images.javascript,
+        ].map((circle, index) => (
+          <div className="circle-cmp app__flex" key={`circle-${index}`}>
+            <img src={circle} alt="profile_bg" />
+          </div>
+        ))}
+      </motion.div>
+    </div>
+  );
+};
 
-export default Header
+export default Header;
