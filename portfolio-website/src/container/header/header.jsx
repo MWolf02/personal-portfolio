@@ -35,8 +35,7 @@ const Header = () => {
               based in Denmark.
             </p>
             <p className="p-text">
-              And, much like a green banana, I'm eagerly waiting to ripen into a
-              sweet, juicy, and fully-grown developer.
+            and i'm eager to grow my skills and become a professional developer!
             </p>
           </div>
         </div>
@@ -55,6 +54,7 @@ const Header = () => {
           alt="profile-circle"
         />
       </motion.div>
+
       <motion.div
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}
@@ -63,8 +63,6 @@ const Header = () => {
         {[
           images.tailwind,
           images.react,
-          images.sass,
-          images.html,
           images.javascript,
         ].map((circle, index) => (
           <div className="circle-cmp app__flex" key={`circle-${index}`}>

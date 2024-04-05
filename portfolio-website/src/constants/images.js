@@ -9,6 +9,10 @@ import bgIMG from "../assets/bgIMG.png"
 import circle from '../assets/circle.svg'
 import martin from '../assets/martin.png'
 import Martin2 from '../assets/Martin 2.png'
+import about01 from '../assets/about01.png'
+import about02 from '../assets/about02.png'
+import about03 from '../assets/about03.png'
+import about04 from '../assets/about04.png'
 
 
 export default {
@@ -22,5 +26,9 @@ export default {
   tailwind,
   bgIMG,
   martin,
-  Martin2
+  Martin2,
+  about01,
+  about02,
+  about03,
+  about04
 };

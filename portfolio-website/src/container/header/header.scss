@@ -1,17 +1,11 @@
-// Define variables for reusable values
-$white-color: #ffffff;
-$orange-color: #ffa500;
-
-// Define mixins for common styles
-@mixin box-shadow {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-}
-
-// Define styles for the #home section
 #home {
   position: relative;
-  margin-top: 75px;
+  background: url("../../assets/bgIMG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
 
+  // disable the default padding styles
   .app__wrapper {
     padding: 0;
 
@@ -21,12 +15,12 @@ $orange-color: #ffa500;
   }
 }
 
-// Define styles for the header section
 .app__header {
   flex: 1;
   width: 100%;
   height: 100%;
   flex-direction: row;
+
   padding: 6rem 2rem 0rem;
 
   @media screen and (min-width: 2000px) {
@@ -42,7 +36,6 @@ $orange-color: #ffa500;
   }
 }
 
-// Define styles for the header information section
 .app__header-info {
   flex: 0.65;
   display: flex;
@@ -50,15 +43,15 @@ $orange-color: #ffa500;
   justify-content: flex-start;
   align-items: flex-start;
   height: 100%;
+
   margin: 0 2rem;
 
   @media screen and (max-width: 1200px) {
     width: 100%;
-    margin-right: 0;
+    margin-right: 0rem;
   }
 }
 
-// Define styles for the header badge section
 .app__header-badge {
   width: 100%;
   display: flex;
@@ -69,11 +62,12 @@ $orange-color: #ffa500;
   .badge-cmp,
   .tag-cmp {
     padding: 1rem 2rem;
-    background: $white-color;
+    background: var(--white-color);
     border-radius: 15px;
     flex-direction: row;
     width: auto;
-    @include box-shadow;
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   }
 
   .tag-cmp {
@@ -101,7 +95,6 @@ $orange-color: #ffa500;
   }
 }
 
-// Define styles for the header circles section
 .app__header-circles {
   flex: 0.75;
   display: flex;
@@ -115,8 +108,9 @@ $orange-color: #ffa500;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: $white-color;
-    @include box-shadow;
+
+    background: var(--white-color);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 
     img {
       width: 60%;
@@ -124,10 +118,11 @@ $orange-color: #ffa500;
     }
   }
 
-  // Define styles for different circle sizes
+  // circles with different height & width
+
   div:nth-child(1) {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
 
   div:nth-child(2) {
@@ -170,10 +165,10 @@ $orange-color: #ffa500;
   }
 }
 
-// Define styles for the header image section
 .app__header-img {
   flex: 1;
   height: 100%;
+
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;

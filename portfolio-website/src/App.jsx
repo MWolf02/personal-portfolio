@@ -8,11 +8,11 @@ function App() {
     <div className='app flex flex-col items-center'>
       <Navbar/>
       <Header/>
-      {/* <About/>
-      <Work/>
+      <About/>
+      {/* <Work/>
       <Skills/>
       <Testimonial/>
-      <Footer/> */}
+      <Footer/>  */}
 
     </div>
     
