@@ -1,8 +1,8 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./about.scss";
 import { images } from "../../constants";
+import { AppWrap } from "../../wrapper";
 
 const About = () => {
   const abouts = [
@@ -13,24 +13,23 @@ const About = () => {
       imgUrl: images.about01,
     },
     {
-      title: "JavaScript Expert",
+      title: "Persistent Problem Solver",
       description:
-        "JavaScript developer with a deep understanding of the language. Experienced in developing client-side scripts for enhancing user experience.",
+        "Dedicated problem solver with a knack for tackling challenges head-on. Thrives in situations that require perseverance and determination to find solutions.",
       imgUrl: images.about02,
     },
     {
-      title: "CSS & SCSS Specialist",
+      title: "High-Energy Team Player",
       description:
-        "CSS and SCSS expert with a keen eye for design. Proficient in crafting visually appealing and responsive user interfaces.",
+        "Outgoing and highly driven team player with a contagious energy that uplifts those around them. Embraces learning and fosters a positive team environment.",
       imgUrl: images.about03,
     },
     {
-      title: "Tailwind CSS Pro",
+      title: "Personal Growth Enthusiast",
       description:
-        "Skilled in utilizing Tailwind's utility-first approach to streamline development workflow and enhance productivity.",
+        "Passionate about personal growth and continuous learning. Committed to evolving skills and embracing new opportunities for development.",
       imgUrl: images.about04,
     },
-    
   ];
 
   return (
@@ -45,9 +44,9 @@ const About = () => {
       <div className="app__profiles">
         {abouts.map((about, index) => (
           <motion.div
-            whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, type: "tween" }}
+            whileInView={{ opacity: 0.9 }}
+            whileHover={{ scale: 1.1, opacity: 1 }}
+            transition={{ duration: 0.4, type: "tween" }}
             className="app__profile-item"
             key={about.title + index}
           >
@@ -65,4 +64,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AppWrap(About, 'about');

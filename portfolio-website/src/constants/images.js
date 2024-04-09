@@ -13,6 +13,11 @@ import about01 from '../assets/about01.png'
 import about02 from '../assets/about02.png'
 import about03 from '../assets/about03.png'
 import about04 from '../assets/about04.png'
+import project1 from '../assets/project1.png'
+import project2 from '../assets/project2.png'
+import project3 from '../assets/project3.png'
+import project4 from '../assets/project4.png'
+import project5 from '../assets/project5.png'
 
 
 export default {
@@ -30,5 +35,10 @@ export default {
   about01,
   about02,
   about03,
-  about04
+  about04,
+  project1,
+  project2,
+  project3,
+  project4,
+  project5,
 };

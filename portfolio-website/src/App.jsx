@@ -1,6 +1,6 @@
 import './App.css'
 import {About, Footer, Header, Skills, Testimonial, Work} from './container'
-import { Navbar } from './components/navbar'
+import { Navbar } from './components'
 
 function App() {
 
@@ -9,10 +9,10 @@ function App() {
       <Navbar/>
       <Header/>
       <About/>
-      {/* <Work/>
+      <Work/>
       <Skills/>
-      <Testimonial/>
-      <Footer/>  */}
+      {/* <Testimonial/> */}
+      {/* <Footer/>  */}
 
     </div>
     
