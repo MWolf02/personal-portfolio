@@ -18,6 +18,8 @@ import project2 from '../assets/project2.png'
 import project3 from '../assets/project3.png'
 import project4 from '../assets/project4.png'
 import project5 from '../assets/project5.png'
+import email from '../assets/email.png'
+import mobile from '../assets/mobile.png'
 
 
 export default {
@@ -41,4 +43,6 @@ export default {
   project3,
   project4,
   project5,
+  email,
+  mobile
 };
