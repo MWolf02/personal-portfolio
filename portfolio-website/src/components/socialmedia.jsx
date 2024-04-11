@@ -16,7 +16,7 @@ const SocialMedia = () => (
       </a>
     </div>
     <div className="social-icon p-text" data-tooltip="Resume">
-      <a href={resume} target="_blank">
+      <a href={resume} download>
         <FaFileAlt />
       </a>
     </div>
