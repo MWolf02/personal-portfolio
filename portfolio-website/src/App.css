@@ -198,6 +198,44 @@ span {
 }
 
 @media screen and (max-width: 500px) {
+  .app__work-item {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .app__work-img:hover .app__work-hover {
+    opacity: 1;
+  }
+
+  .app__work-hover {
+    opacity: 1;
+  }
+
+  .app__navigation {
+    display: none;
+  }
+
+  .app__social,
+  .social-icon {
+    padding: 0;
+    background-color: var(--white-color);
+    position: absolute;
+  }
+
+  .icon-1 {
+    bottom: 0;
+    left: 0;
+  }
+
+  .icon-2 {
+    bottom: 50px;
+    left: 0;
+  }
+
+  .icon-3 {
+    bottom: 100px;
+    left: 0;
+  }
+
   .copyright {
     padding: 2rem;
   }
