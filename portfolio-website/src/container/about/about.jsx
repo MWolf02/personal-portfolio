@@ -9,25 +9,25 @@ const About = () => {
     {
       title: "Skilled React.js Developer",
       description:
-        "Self-taught developer with expertise in React.js. Proficient in creating dynamic and interactive user interfaces for web applications.",
+        "Self-taught developer with expertise in React.js. I am proficient in creating dynamic and interactive user interfaces for web applications.",
       imgUrl: images.about01,
     },
     {
       title: "Persistent Problem Solver",
       description:
-        "Dedicated problem solver with a knack for tackling challenges head-on. Thrives in situations that require perseverance and determination to find solutions.",
+        "Dedicated problem solver with a knack for tackling challenges head-on. I thrive in situations that require perseverance and determination to find solutions.",
       imgUrl: images.about02,
     },
     {
       title: "High-Energy Team Player",
       description:
-        "Outgoing and highly driven team player with a contagious energy that uplifts those around them. Embraces learning and fosters a positive team environment.",
+        "Outgoing and highly driven team player with a contagious energy that uplifts those around them. I embraces learning and foster a positive team environment.",
       imgUrl: images.about03,
     },
     {
       title: "Personal Growth Enthusiast",
       description:
-        "Passionate about personal growth and continuous learning. Committed to evolving skills and embracing new opportunities for development.",
+        "Passionate about personal growth and continuous learning. I am committed to evolving skills and embracing new opportunities for development.",
       imgUrl: images.about04,
     },
   ];

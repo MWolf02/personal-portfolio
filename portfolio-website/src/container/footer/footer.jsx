@@ -41,9 +41,10 @@ const Footer = () => {
             name="email"
             placeholder="Your Email"
             className="p-text"
+            required
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
-          <textarea id="message" name="message" placeholder="Your Message" className="p-text" />
+          <textarea id="message" name="message" placeholder="Your Message" className="p-text" required/>
           <ValidationError
             prefix="Message"
             field="message"
